@@ -18,6 +18,9 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&family=Sarabun:wght@300;400;600&family=Kanit:wght@300;400;600&display=swap');
 
@@ -31,6 +34,27 @@
             margin-left: 260px;
             /* กำหนดระยะห่างจาก sidebar สำหรับหน้าจอใหญ่ */
             padding-top: 60px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            gap: 30px
+        }
+
+        .card-header {
+        font-size: 16px;
+        background: linear-gradient(to right, #3a4c88, #f9f9f9);
+        color: white;
+        
+        }
+
+        .card {
+            max-width: 50vh;
+        }
+
+        .text-right {
+            text-align: right;
         }
 
         /* Adjust for smaller screens (mobile, tablet) */
@@ -42,6 +66,8 @@
                 /* เพิ่ม padding ด้านซ้ายเล็กน้อย */
                 padding-right: 15px;
                 /* เพิ่ม padding ด้านขวาเล็กน้อย */
+                gap: 0px;
+                z-index: 1000;
             }
         }
 
@@ -74,6 +100,9 @@
             color: rgb(0, 0, 0);
             padding-top: 60px;
             transition: transform 0.3s ease;
+            z-index: 500; /* กำหนด z-index ให้กับ Sidebar */
+
+            
         }
 
         .sidebar a {
@@ -116,6 +145,7 @@
                 transform: translateX(250px);
                 /* Slide in effect */
             }
+            
         }
 
         /* Ensure sidebar is always visible on large screens */
@@ -138,6 +168,7 @@
         .bg01 {
             color: #1D2951;
         }
+     
     </style>
 </head>
 
@@ -182,10 +213,58 @@
         </ul>
     </div>
 
-    <div class="container d-flex align-items-center justify-content-center">
+    <div class="container d-flex align-items-center justify-content-center text-center ">
         <div class="content-wrapper col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
-            <h1 class="mt-5 text-center">Main Content Area</h1>
-            <p class="text-center">This is where the main content will go.</p>
+            <img src="../../Logo-02.png" style="height: 130px; width: 130px;" alt="" class="text-center ">
+            <p class="bg01 txt18">ระบบจัดการข้อมูลหลังบ้าน</p>
+            <p class="bg01 txt18">" เว็บไซต์รีสอร์ท AT Resort "</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row content-wrapper">
+            <!-- คอลัมน์ 1 - ผู้ใช้งาน -->
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
+                <div class="card ">
+                    <!-- Header ของกล่อง -->
+                    <div class="card-header fw-bold">
+                        ห้องพัก
+                    </div>
+                    <!-- เนื้อหาของกล่อง -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- รูปภาพ/ไอคอนทางซ้าย -->
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-users fa-2x" style="margin-left: 10px;"></i>
+                        </div>
+    
+                        <!-- ตัวเลขและข้อความทางขวา -->
+                        <div class="text-right mt-2">
+                            <p class="txt18 fw-bold" style="margin-right: 10px; ">120</p>
+                            <p class="text-black txt18" style="margin-right: 10px;">รายการ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mb-3">
+                <div class="card">
+                    <!-- Header ของกล่อง -->
+                    <div class="card-header fw-bold">
+                        ผู้ใช้งาน
+                    </div>
+                    <!-- เนื้อหาของกล่อง -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- รูปภาพ/ไอคอนทางซ้าย -->
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-users fa-2x" style="margin-left: 10px;"></i>
+                        </div>
+    
+                        <!-- ตัวเลขและข้อความทางขวา -->
+                        <div class="text-right mt-2">
+                            <p class="txt18 fw-bold" style="margin-right: 10px; ">120</p>
+                            <p class="text-black txt18" style="margin-right: 10px;">รายการ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -211,8 +290,6 @@
         }
     </script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
