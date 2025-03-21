@@ -21,6 +21,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&family=Sarabun:wght@300;400;600&family=Kanit:wght@300;400;600&display=swap');
 
+        body {
+            background-color: #f4f4f4;
+        }
         /* Default styles for large screens (desktop) */
         .container {
             margin-left: auto;
@@ -67,10 +70,6 @@
                 gap: 0px;
 
 
-            }
-            /* ปุ่มเพิ่มผู้ใช้งาน button */
-            .button-btn {
-                margin-top: 10px;
             }
             
         }
@@ -250,10 +249,8 @@
                  <h4 class="bg01 fw-bold "> รายการชื่อผู้ใช้งาน</h4>
                 <button class="btn fw-bold rounded-5 text-white button-btn" style="background-color: #1cb048;"><i class="fa-solid fa-plus "></i> เพิ่มผู้ใช้งาน</button>
             </div>
-            <!-- เส้นความยาว 35% จะไม่ไปเเสดงในหน้าจอ mobile -->
-            <div class="d-none d-lg-block mt-3" style=" bottom: 0; width: 100%; height: 1.5px; background: linear-gradient(to right, #1D2951, #fbf8f6);"></div>
             <!-- เส้นความยาว 100% จะไม่ไปเเสดงในหน้าจอ desktop -->
-            <div class="d-lg-none d-block" style=" bottom: 0; width: 100%; height: 1.5px; background: linear-gradient(to right, #1D2951, #fbf8f6);"></div>
+            <div class="d-lg-none d-block mt-3" style=" bottom: 0; width: 100%; height: 1.5px; background: linear-gradient(to right, #1D2951, #fbf8f6);"></div>
         </div>
     </div>
     <div class="container d-flex align-items-center justify-content-center text-center">
